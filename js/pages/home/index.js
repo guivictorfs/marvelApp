@@ -1,7 +1,7 @@
 function populateCharacters(results) {
   var charactersList = document.getElementById("charactersList");
   var currentRow = createCardRow();
-  for (var i = 0; i < 8; i++) {
+  for (var i = 0; i < results.length; i++) {
     currentRow.appendChild(
       createCard(
         `${results[i].thumbnail.path}.${results[i].thumbnail.extension}`,

@@ -1,5 +1,5 @@
 var currentPage = 0;
-var pageSize = 12;
+var pageSize = 10;
 var filters = "";
 
 function getCharacters() {
