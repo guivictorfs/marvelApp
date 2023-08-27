@@ -16,16 +16,19 @@ function populateCharacters(results) {
       currentRow = createCardRow();
     }
   }
+  if (results.length % 4 != 0) {
+    charactersList.appendChild(currentRow);
+  }
 }
 
-function clearData(){
-  var charactersList = document.getElementById("charactersList")
-  charactersList.innerHTML = ""
+function clearData() {
+  var charactersList = document.getElementById("charactersList");
+  charactersList.innerHTML = "";
 }
 
-function configurePage(){
-  var input = document.getElementById("searchInput")
-  input.addEventListener("keypress", function(event) {
+function configurePage() {
+  var input = document.getElementById("searchInput");
+  input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
       event.preventDefault();
       document.getElementById("searchButton").click();
