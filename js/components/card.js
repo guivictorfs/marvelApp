@@ -27,7 +27,7 @@ function createCard(imageLink, titleText, characterId){
     button.classList.add("btn")
     button.classList.add("btn-primary")
     button.textContent = "Character Page"
-    button.href = `/pages/randomCharacter.html?id=${characterId}`
+    button.href = `/pages/character.html?id=${characterId}`
     buttonContainer.appendChild(button)
     return container
 }
