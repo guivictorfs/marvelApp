@@ -8,9 +8,7 @@ function getHash(timeStamp) {
 
 function get(endpoint, params = "") {
   const timeStamp = Date.now().toString();
-  const url = `${urlAPI}${endpoint}?apikey=${publicKey}&ts=${timeStamp}&hash=${getHash(
-    timeStamp
-  )}${params}`;
+  const url = `${urlAPI}${endpoint}?apikey=${publicKey}${params}`;
 
   return new Promise((resolve, reject) => {
     var xhttp = new XMLHttpRequest();
